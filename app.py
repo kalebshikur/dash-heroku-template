@@ -220,6 +220,7 @@ external_stylesheets = [
 
 
 appe = JupyterDash(__name__, external_stylesheets = [dbc.themes.CYBORG])
+server = appe.server
 appe.layout = html.Div(
     [
         html.H1(children ="General Social Servey Data Dahboard",style={
