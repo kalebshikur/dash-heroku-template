@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
+from dash import Dash
 import dash
 from jupyter_dash import JupyterDash
 import dash_core_components as dcc
@@ -219,7 +220,7 @@ external_stylesheets = [
 ]
 
 
-appe = JupyterDash(__name__, external_stylesheets = [dbc.themes.CYBORG])
+appe = Dash(__name__, external_stylesheets = [dbc.themes.CYBORG])
 server = appe.server
 appe.layout = html.Div(
     [
