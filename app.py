@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import chart_studio.plotly as py
@@ -6,8 +5,8 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
-from dash import Dash
 import dash
+
 from jupyter_dash import JupyterDash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -220,7 +219,7 @@ external_stylesheets = [
 ]
 
 
-appe = Dash(__name__, external_stylesheets = [dbc.themes.CYBORG])
+appe = dash.Dash(__name__, external_stylesheets = [dbc.themes.CYBORG])
 server = appe.server
 appe.layout = html.Div(
     [
@@ -335,4 +334,3 @@ def make_figure(x, y, color):
 
 if __name__ == '__main__':
     appe.run_server(debug=True)
-# app.run_server(debug=True, port=8051, host='0.0.0.0')
