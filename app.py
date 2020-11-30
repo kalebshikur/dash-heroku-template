@@ -332,5 +332,5 @@ def make_figure(x, y, color):
 )
 
 if __name__ == '__main__':
-    appe.run_server(mode = 'inline', debug=True, port = 8080)
+    appe.run_server(debug=True, port = 8080)
 # app.run_server(debug=True, port=8051, host='0.0.0.0')
